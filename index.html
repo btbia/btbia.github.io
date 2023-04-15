@@ -7,24 +7,56 @@
     <meta name="description" content="" />
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/scripts/js.js"></script>
   </head>
   <body>
-    <logo class="logo">MY</logo>
+    <logo class="logo"><img src="/images/Logo BTBIA.png" /></logo>
     <nav class="nav" id="nav">
       <a href="#home" id="nav1">Logo</a>
       <a href="#menu-item-1">Menu Item 1</a>
       <a href="#menu-item-2">Menu Item 2</a>
       <a href="#menu-item-3">Menu Item 3</a>
-      <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
-        <div class="menu-toggle__bar1"></div>
-        <div class="menu-toggle__bar2"></div>
-        <div class="menu-toggle__bar3"></div>
-      </a>
     </nav>
     <br />
-    <main>
+    <main class="main" id="main1">
       <br />
-      <h1>Hello, world!</h1>
+      <div class="slide">
+        <section id="slider">
+          <input
+            type="radio"
+            onclick="cgbg('main1', '#491bf2')"
+            name="slider"
+            id="s1"
+            checked
+          />
+          <input
+            type="radio"
+            onclick="cgbg('main1', '#f21bce')"
+            name="slider"
+            id="s2"
+          />
+          <input
+            type="radio"
+            onclick="cgbg('main1', '#c30de7')"
+            name="slider"
+            id="s3"
+          />
+
+          <label for="s1" id="slide1"
+            ><img
+              src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg"
+              alt=""
+          /></label>
+          <label for="s2" id="slide2"
+            ><img
+              src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg"
+              alt=""
+          /></label>
+          <label for="s3" id="slide3"
+            ><img src="https://wallpaperaccess.com/full/1154341.jpg" alt=""
+          /></label>
+        </section>
+      </div>
     </main>
     <footer>
       <small
